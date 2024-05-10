@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Runtime.ConstrainedExecution;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -21,25 +20,40 @@ namespace CustomerDebtApp
             newcustomer = new CustomerQueue();
         }
 
-       
-
         private void Enqueue_Click(object sender, EventArgs e)
         {
+            int.TryParse(Age_TextBox.Text, out int age);
+            float.TryParse(AmountOwed_TextBox.Text, out float amountOwed);
+
+            Customer customer = new Customer(Name_TextBox.Text, age, Address_TextBox.Text, amountOwed);
+                newcustomer.Enqueue(customer);
+
+            // Clear the textboxes used for entering customer information
+            Name_TextBox.Clear();
+            Age_TextBox.Clear();
+            Address_TextBox.Clear();
+            AmountOwed_TextBox.Clear();
+
+            Display(customer);
+
+
+
+        }
+        private void Display(Customer customer)
+        { 
+            if (customer != null)
             {
-                int.TryParse(textBox2.Text, out int age);
-                float.TryParse(textBox4.Text, out float amountOwed);
-
-                newcustomer.Enqueue(textBox1.Text, age, textBox3.Text, amountOwed);
-                textBox5.Text = newcustomer.Display();
-
-                // Clear the textboxes used for entering customer information
-                textBox1.Clear();
-                textBox2.Clear();
-                textBox3.Clear();
-                textBox4.Clear();
-
-
+                Display_Info.Text = customer.GetInformation();
             }
+            // Decrease the total amount owed by the dequeued customer's amount owed
+            CustomerCount.Text = $"Number of Customers in Queue: {newcustomer.Count()}";
+
+            Customer_Max_Debt_Label.Text = $" Highest Customer: {newcustomer.MaximumAmountOwed()}";
+
+            Total_Owed_Label.Text = $"Total Debt Owned: {newcustomer.TotalAmountOwed()}";
+
+
+
         }
 
         private void Dequeue_Click(object sender, EventArgs e)
@@ -47,15 +61,29 @@ namespace CustomerDebtApp
             if (!newcustomer.IsEmpty())
             {
                 Customer remove_customer = newcustomer.Dequeue();
-                textBox6.Text = remove_customer.GetInformation();
-
-                textBox5.Text = newcustomer.Display();
+                Display(remove_customer);
             }
             else
             {
-                // MessageBox.Show("Customer Queue is empty. Cannot dequeue.");
-                //MessageBox.Show("gggg");
+                MessageBox.Show("Customer Queue is empty. Cannot dequeue.");
+                //Remove_Info.Clear();
+                Total_Owed_Label.Text = " ";
+                Customer_Max_Debt_Label.Text = "";
             }
+       }
+
+        private void Peek_Click(object sender, EventArgs e)
+        {
+            if (!newcustomer.IsEmpty()) 
+            {
+                Customer peekedCustomer = newcustomer.Peek();
+                Display(peekedCustomer);
+                
+            }
+            else 
+            {
+                MessageBox.Show("Queue is empty. Cannot peek.");
+            }   
         }
     }
 }

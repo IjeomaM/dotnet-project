@@ -1,10 +1,10 @@
-C:\Users\Ijeoma\Downloads\C Sharp\CustomerDebtApp\CustomerDebtApp\bin\Debug\CustomerDebtApp.exe.config
-C:\Users\Ijeoma\Downloads\C Sharp\CustomerDebtApp\CustomerDebtApp\bin\Debug\CustomerDebtApp.exe
-C:\Users\Ijeoma\Downloads\C Sharp\CustomerDebtApp\CustomerDebtApp\bin\Debug\CustomerDebtApp.pdb
-C:\Users\Ijeoma\Downloads\C Sharp\CustomerDebtApp\CustomerDebtApp\obj\Debug\CustomerDebtApp.csproj.AssemblyReference.cache
-C:\Users\Ijeoma\Downloads\C Sharp\CustomerDebtApp\CustomerDebtApp\obj\Debug\CustomerDebtApp.Form1.resources
-C:\Users\Ijeoma\Downloads\C Sharp\CustomerDebtApp\CustomerDebtApp\obj\Debug\CustomerDebtApp.Properties.Resources.resources
-C:\Users\Ijeoma\Downloads\C Sharp\CustomerDebtApp\CustomerDebtApp\obj\Debug\CustomerDebtApp.csproj.GenerateResource.cache
-C:\Users\Ijeoma\Downloads\C Sharp\CustomerDebtApp\CustomerDebtApp\obj\Debug\CustomerDebtApp.csproj.CoreCompileInputs.cache
-C:\Users\Ijeoma\Downloads\C Sharp\CustomerDebtApp\CustomerDebtApp\obj\Debug\CustomerDebtApp.exe
-C:\Users\Ijeoma\Downloads\C Sharp\CustomerDebtApp\CustomerDebtApp\obj\Debug\CustomerDebtApp.pdb
+C:\Users\Ijeoma\Downloads\School\Data and algorithm\Assessment\CustomerDebtApp\CustomerDebtApp\bin\Debug\CustomerDebtApp.exe.config
+C:\Users\Ijeoma\Downloads\School\Data and algorithm\Assessment\CustomerDebtApp\CustomerDebtApp\bin\Debug\CustomerDebtApp.exe
+C:\Users\Ijeoma\Downloads\School\Data and algorithm\Assessment\CustomerDebtApp\CustomerDebtApp\bin\Debug\CustomerDebtApp.pdb
+C:\Users\Ijeoma\Downloads\School\Data and algorithm\Assessment\CustomerDebtApp\CustomerDebtApp\obj\Debug\CustomerDebtApp.csproj.AssemblyReference.cache
+C:\Users\Ijeoma\Downloads\School\Data and algorithm\Assessment\CustomerDebtApp\CustomerDebtApp\obj\Debug\CustomerDebtApp.Properties.Resources.resources
+C:\Users\Ijeoma\Downloads\School\Data and algorithm\Assessment\CustomerDebtApp\CustomerDebtApp\obj\Debug\CustomerDebtApp.csproj.GenerateResource.cache
+C:\Users\Ijeoma\Downloads\School\Data and algorithm\Assessment\CustomerDebtApp\CustomerDebtApp\obj\Debug\CustomerDebtApp.csproj.CoreCompileInputs.cache
+C:\Users\Ijeoma\Downloads\School\Data and algorithm\Assessment\CustomerDebtApp\CustomerDebtApp\obj\Debug\CustomerDebtApp.exe
+C:\Users\Ijeoma\Downloads\School\Data and algorithm\Assessment\CustomerDebtApp\CustomerDebtApp\obj\Debug\CustomerDebtApp.pdb
+C:\Users\Ijeoma\Downloads\School\Data and algorithm\Assessment\CustomerDebtApp\CustomerDebtApp\obj\Debug\CustomerDebtApp.Form1.resources

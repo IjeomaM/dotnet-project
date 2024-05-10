@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CustomerDebtApp")]
+[assembly: AssemblyTitle("TestingRecursive")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CustomerDebtApp")]
+[assembly: AssemblyProduct("TestingRecursive")]
 [assembly: AssemblyCopyright("Copyright ©  2024")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("ebc87ce1-6931-4a91-9bb5-2076b873f02c")]
+[assembly: Guid("10c1506b-e664-4483-ace0-6ebf01f8d208")]
 
 // Version information for an assembly consists of the following four values:
 //

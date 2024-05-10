@@ -28,137 +28,170 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.Enqueue = new System.Windows.Forms.Button();
             this.Dequeue = new System.Windows.Forms.Button();
+            this.Enqueue = new System.Windows.Forms.Button();
+            this.Name_Label = new System.Windows.Forms.Label();
+            this.AmountOwed_Label = new System.Windows.Forms.Label();
+            this.Address_Label = new System.Windows.Forms.Label();
+            this.Age_Label = new System.Windows.Forms.Label();
+            this.Display_Info = new System.Windows.Forms.TextBox();
+            this.AmountOwed_TextBox = new System.Windows.Forms.TextBox();
+            this.Address_TextBox = new System.Windows.Forms.TextBox();
+            this.Age_TextBox = new System.Windows.Forms.TextBox();
+            this.Name_TextBox = new System.Windows.Forms.TextBox();
+            this.CustomerCount = new System.Windows.Forms.Label();
+            this.Total_Owed_Label = new System.Windows.Forms.Label();
+            this.Customer_Max_Debt_Label = new System.Windows.Forms.Label();
+            this.Peek = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // Dequeue
             // 
-            this.textBox1.Location = new System.Drawing.Point(190, 7);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(421, 26);
-            this.textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(190, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(421, 26);
-            this.textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(192, 118);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(419, 26);
-            this.textBox3.TabIndex = 2;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(190, 178);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(421, 26);
-            this.textBox4.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(70, 60);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 20);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Age:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(70, 118);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(72, 20);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Address:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(70, 181);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(114, 20);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Amount Owed:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(65, 276);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(603, 113);
-            this.textBox5.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(70, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 20);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Name:";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(65, 404);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(603, 72);
-            this.textBox6.TabIndex = 12;
+            this.Dequeue.Location = new System.Drawing.Point(216, 232);
+            this.Dequeue.Name = "Dequeue";
+            this.Dequeue.Size = new System.Drawing.Size(94, 36);
+            this.Dequeue.TabIndex = 24;
+            this.Dequeue.Text = "Dequeue";
+            this.Dequeue.UseVisualStyleBackColor = true;
+            this.Dequeue.Click += new System.EventHandler(this.Dequeue_Click);
             // 
             // Enqueue
             // 
-            this.Enqueue.Location = new System.Drawing.Point(138, 214);
+            this.Enqueue.Location = new System.Drawing.Point(79, 232);
             this.Enqueue.Name = "Enqueue";
-            this.Enqueue.Size = new System.Drawing.Size(114, 34);
-            this.Enqueue.TabIndex = 13;
+            this.Enqueue.Size = new System.Drawing.Size(101, 36);
+            this.Enqueue.TabIndex = 23;
             this.Enqueue.Text = "Enqueue";
             this.Enqueue.UseVisualStyleBackColor = true;
             this.Enqueue.Click += new System.EventHandler(this.Enqueue_Click);
             // 
-            // Dequeue
+            // Name_Label
             // 
-            this.Dequeue.Location = new System.Drawing.Point(325, 214);
-            this.Dequeue.Name = "Dequeue";
-            this.Dequeue.Size = new System.Drawing.Size(106, 34);
-            this.Dequeue.TabIndex = 14;
-            this.Dequeue.Text = "Dequeue";
-            this.Dequeue.UseVisualStyleBackColor = true;
-            this.Dequeue.Click += new System.EventHandler(this.Dequeue_Click);
+            this.Name_Label.AutoSize = true;
+            this.Name_Label.Location = new System.Drawing.Point(94, 9);
+            this.Name_Label.Name = "Name_Label";
+            this.Name_Label.Size = new System.Drawing.Size(55, 20);
+            this.Name_Label.TabIndex = 22;
+            this.Name_Label.Text = "Name:";
+            // 
+            // AmountOwed_Label
+            // 
+            this.AmountOwed_Label.AutoSize = true;
+            this.AmountOwed_Label.Location = new System.Drawing.Point(94, 190);
+            this.AmountOwed_Label.Name = "AmountOwed_Label";
+            this.AmountOwed_Label.Size = new System.Drawing.Size(114, 20);
+            this.AmountOwed_Label.TabIndex = 21;
+            this.AmountOwed_Label.Text = "Amount Owed:";
+            // 
+            // Address_Label
+            // 
+            this.Address_Label.AutoSize = true;
+            this.Address_Label.Location = new System.Drawing.Point(94, 80);
+            this.Address_Label.Name = "Address_Label";
+            this.Address_Label.Size = new System.Drawing.Size(72, 20);
+            this.Address_Label.TabIndex = 20;
+            this.Address_Label.Text = "Address:";
+            // 
+            // Age_Label
+            // 
+            this.Age_Label.AutoSize = true;
+            this.Age_Label.Location = new System.Drawing.Point(94, 48);
+            this.Age_Label.Name = "Age_Label";
+            this.Age_Label.Size = new System.Drawing.Size(42, 20);
+            this.Age_Label.TabIndex = 19;
+            this.Age_Label.Text = "Age:";
+            // 
+            // Display_Info
+            // 
+            this.Display_Info.Location = new System.Drawing.Point(79, 290);
+            this.Display_Info.Multiline = true;
+            this.Display_Info.Name = "Display_Info";
+            this.Display_Info.Size = new System.Drawing.Size(440, 95);
+            this.Display_Info.TabIndex = 17;
+            // 
+            // AmountOwed_TextBox
+            // 
+            this.AmountOwed_TextBox.Location = new System.Drawing.Point(216, 184);
+            this.AmountOwed_TextBox.Name = "AmountOwed_TextBox";
+            this.AmountOwed_TextBox.Size = new System.Drawing.Size(267, 26);
+            this.AmountOwed_TextBox.TabIndex = 16;
+            // 
+            // Address_TextBox
+            // 
+            this.Address_TextBox.Location = new System.Drawing.Point(216, 74);
+            this.Address_TextBox.Multiline = true;
+            this.Address_TextBox.Name = "Address_TextBox";
+            this.Address_TextBox.Size = new System.Drawing.Size(267, 101);
+            this.Address_TextBox.TabIndex = 15;
+            // 
+            // Age_TextBox
+            // 
+            this.Age_TextBox.Location = new System.Drawing.Point(216, 42);
+            this.Age_TextBox.Name = "Age_TextBox";
+            this.Age_TextBox.Size = new System.Drawing.Size(267, 26);
+            this.Age_TextBox.TabIndex = 14;
+            // 
+            // Name_TextBox
+            // 
+            this.Name_TextBox.Location = new System.Drawing.Point(216, 9);
+            this.Name_TextBox.Name = "Name_TextBox";
+            this.Name_TextBox.Size = new System.Drawing.Size(267, 26);
+            this.Name_TextBox.TabIndex = 13;
+            // 
+            // CustomerCount
+            // 
+            this.CustomerCount.AutoSize = true;
+            this.CustomerCount.Location = new System.Drawing.Point(506, 42);
+            this.CustomerCount.Name = "CustomerCount";
+            this.CustomerCount.Size = new System.Drawing.Size(0, 20);
+            this.CustomerCount.TabIndex = 25;
+            // 
+            // Total_Owed_Label
+            // 
+            this.Total_Owed_Label.AutoSize = true;
+            this.Total_Owed_Label.Location = new System.Drawing.Point(510, 107);
+            this.Total_Owed_Label.Name = "Total_Owed_Label";
+            this.Total_Owed_Label.Size = new System.Drawing.Size(0, 20);
+            this.Total_Owed_Label.TabIndex = 26;
+            // 
+            // Customer_Max_Debt_Label
+            // 
+            this.Customer_Max_Debt_Label.AutoSize = true;
+            this.Customer_Max_Debt_Label.Location = new System.Drawing.Point(510, 155);
+            this.Customer_Max_Debt_Label.Name = "Customer_Max_Debt_Label";
+            this.Customer_Max_Debt_Label.Size = new System.Drawing.Size(0, 20);
+            this.Customer_Max_Debt_Label.TabIndex = 27;
+            // 
+            // Peek
+            // 
+            this.Peek.Location = new System.Drawing.Point(360, 232);
+            this.Peek.Name = "Peek";
+            this.Peek.Size = new System.Drawing.Size(75, 36);
+            this.Peek.TabIndex = 28;
+            this.Peek.Text = "Peek";
+            this.Peek.UseVisualStyleBackColor = true;
+            this.Peek.Click += new System.EventHandler(this.Peek_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(842, 555);
+            this.ClientSize = new System.Drawing.Size(964, 450);
+            this.Controls.Add(this.Peek);
+            this.Controls.Add(this.Customer_Max_Debt_Label);
+            this.Controls.Add(this.Total_Owed_Label);
+            this.Controls.Add(this.CustomerCount);
             this.Controls.Add(this.Dequeue);
             this.Controls.Add(this.Enqueue);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Name_Label);
+            this.Controls.Add(this.AmountOwed_Label);
+            this.Controls.Add(this.Address_Label);
+            this.Controls.Add(this.Age_Label);
+            this.Controls.Add(this.Display_Info);
+            this.Controls.Add(this.AmountOwed_TextBox);
+            this.Controls.Add(this.Address_TextBox);
+            this.Controls.Add(this.Age_TextBox);
+            this.Controls.Add(this.Name_TextBox);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -168,18 +201,21 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button Enqueue;
         private System.Windows.Forms.Button Dequeue;
+        private System.Windows.Forms.Button Enqueue;
+        private System.Windows.Forms.Label Name_Label;
+        private System.Windows.Forms.Label AmountOwed_Label;
+        private System.Windows.Forms.Label Address_Label;
+        private System.Windows.Forms.Label Age_Label;
+        private System.Windows.Forms.TextBox Display_Info;
+        private System.Windows.Forms.TextBox AmountOwed_TextBox;
+        private System.Windows.Forms.TextBox Address_TextBox;
+        private System.Windows.Forms.TextBox Age_TextBox;
+        private System.Windows.Forms.TextBox Name_TextBox;
+        private System.Windows.Forms.Label CustomerCount;
+        private System.Windows.Forms.Label Total_Owed_Label;
+        private System.Windows.Forms.Label Customer_Max_Debt_Label;
+        private System.Windows.Forms.Button Peek;
     }
 }
 
